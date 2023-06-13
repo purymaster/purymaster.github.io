@@ -7,7 +7,12 @@ export default function Works() {
       Works
       <ul>
         <li>
-          <Link to={"works/1"}>Link</Link>
+          <Link to={"works/1"}>
+            <img src="" alt="" />
+            <div className='cover'>
+              Name
+            </div>
+          </Link>
         </li>
       </ul>
     </Container>

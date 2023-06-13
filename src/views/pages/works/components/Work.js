@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export default function Work() {
   return (
     <Container>
-      Work
+      Name
     </Container>
   )
 };
