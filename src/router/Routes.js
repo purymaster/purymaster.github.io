@@ -10,7 +10,7 @@ export default function Routes() {
     <ReactRoutes>
       <Route element={<Layout />}>
         <Route path="/" element={<Works />} />
-        <Route path="/works/:name" element={<Work />} />
+        <Route path="/works/:acronym" element={<Work />} />
       </Route>
     </ReactRoutes >
   );
