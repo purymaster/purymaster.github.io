@@ -5,7 +5,6 @@ import Header from '@views/shared/header';
 import Footer from '@views/shared/footer';
 
 export default function Layout() {
-
   return (
     <Container>
       <Header />
@@ -18,12 +17,12 @@ export default function Layout() {
 }
 
 const Container = styled.div`
-	display: flex;
-	flex-direction: column;
-	height: 100%;
-	
-	main {
-		overflow: auto;
-		flex: 1;
-	}
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  main {
+    overflow: auto;
+    flex: 1;
+  }
 `;
