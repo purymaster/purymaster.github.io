@@ -1,13 +1,7 @@
 import styled from 'styled-components';
 
 export default function Footer() {
-  return (
-    <Container>
-      Footer
-    </Container>
-  )
-};
+  return <Container>Footer</Container>;
+}
 
-const Container = styled.div`
-
-`;
+const Container = styled.div``;
