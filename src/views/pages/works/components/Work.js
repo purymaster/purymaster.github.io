@@ -1,10 +1,14 @@
 import styled from 'styled-components';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { GitHub } from 'react-feather';
 
 export default function Work() {
   const location = useLocation();
   const data = location.state;
+  const navigate = useNavigate();
+  const handlePageBack = () => {
+    navigate(-1);
+  };
 
   return (
     <Container>
@@ -29,8 +33,8 @@ export default function Work() {
                   <dt>사용기술</dt>
                   <dd>
                     <ul>
-                      {data.spec.map((data) => (
-                        <li>{data}</li>
+                      {data.spec.map((data, index) => (
+                        <li key={index}>{data}</li>
                       ))}
                     </ul>
                   </dd>
@@ -41,8 +45,8 @@ export default function Work() {
                   <dt>설명</dt>
                   <dd>
                     <ul>
-                      {data.info.map((data) => (
-                        <li>{data}</li>
+                      {data.info.map((data, index) => (
+                        <li key={index}>{data}</li>
                       ))}
                     </ul>
                   </dd>
@@ -53,14 +57,14 @@ export default function Work() {
                   <dt>비고</dt>
                   <dd>
                     <ul>
-                      {data.note.map((data) => (
-                        <li>{data}</li>
+                      {data.note.map((data, index) => (
+                        <li key={index}>{data}</li>
                       ))}
                     </ul>
                   </dd>
                 </div>
               )}
-              {data.link && (
+              {data.link && data.link.url && (
                 <div>
                   <dt>링크</dt>
                   <dd>
@@ -72,6 +76,9 @@ export default function Work() {
               )}
             </dl>
           </div>
+          <button type="button" onClick={handlePageBack}>
+            뒤로
+          </button>
         </>
       )}
     </Container>
