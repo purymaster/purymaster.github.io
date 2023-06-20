@@ -20,9 +20,20 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   height: 100%;
-
+  position: relative;
+  max-width: 1340px;
+  margin: 0 auto;
+  padding: 0 30px;
+  font-size: 16px;
   main {
     overflow: auto;
     flex: 1;
+  }
+  @media (max-width: 1024px) {
+    font-size: 14px;
+  }
+  @media (max-width: 599px) {
+    font-size: 12px;
+    padding: 0 15px;
   }
 `;
