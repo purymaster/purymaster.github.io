@@ -1,7 +1,7 @@
 {
   "data": [
     {
-      "id": 16,
+      "id": 17,
       "name": "팬시월렛",
       "acronym": "Fanc Wallet",
       "taskDuration": null,
@@ -19,7 +19,7 @@
       "link": null
     },
     {
-      "id": 15,
+      "id": 16,
       "name": "시스루",
       "acronym": "Seathru",
       "taskDuration": null,
@@ -37,7 +37,7 @@
       "link": null
     },
     {
-      "id": 14,
+      "id": 15,
       "name": "내카",
       "acronym": "Naecar",
       "taskDuration": null,
@@ -54,7 +54,7 @@
       "link": null
     },
     {
-      "id": 13,
+      "id": 14,
       "name": "왈라뷰",
       "acronym": "Wallavu",
       "taskDuration": null,
@@ -73,7 +73,7 @@
       "link": null
     },
     {
-      "id": 12,
+      "id": 13,
       "name": "미래엔",
       "acronym": "MiraeN",
       "taskDuration": {
@@ -88,6 +88,24 @@
       },
       "link": {
         "url": "https://github.com/purymaster/mirae_n"
+      }
+    },
+    {
+      "id": 12,
+      "name": "포스텍 입학처",
+      "acronym": "Postech ADM",
+      "taskDuration": {
+        "startAt": "2019-10-01",
+        "endAt": "2019-12-04"
+      },
+      "spec": ["HTML", "CSS", "JavaScript", "JQuery"],
+      "info": ["포항공과대학교 입학처 사이트 구축", "반응형 웹 페이지"],
+      "note": ["웹어워드코리아 2020 교육서비스분야 최우수상 수상"],
+      "image": {
+        "url": "/assets/image/thumb/thumb_adm.jpg"
+      },
+      "link": {
+        "url": "https://github.com/purymaster/postech_adm"
       }
     },
     {
@@ -136,7 +154,7 @@
       },
       "spec": ["HTML", "CSS", "JavaScript", "JQuery"],
       "info": ["올림피아드학원 통합 사이트 구축", "반응형 웹 페이지"],
-      "note": null,
+      "note": ["웹어워드코리아 2020 전문교육분야 최우수상 수상"],
       "image": {
         "url": "/assets/image/thumb/thumb_olympiad.jpg"
       },
@@ -263,7 +281,7 @@
         "웹스퀘어5를 사용하여 레이아웃 작업",
         "웹 접근성 준수를 위한 가이드 작업"
       ],
-      "note": ["웹 접근성 인증마크 획득"],
+      "note": ["웹 접근성 인증마크 획득(한국웹접근성인증평가원)"],
       "image": {
         "url": "/assets/image/thumb/thumb_jb.jpg"
       },
@@ -279,7 +297,7 @@
       },
       "spec": ["HTML", "CSS", "JavaScript", "JQuery"],
       "info": [
-        "중국 역직구 이커머스 쇼핑몰",
+        "중국 소매장 역직구 B2B 이커머스 쇼핑몰",
         "다국어 쇼핑몰(이음샵)을 커스터마이징하여 레이아웃 작업"
       ],
       "note": null,
