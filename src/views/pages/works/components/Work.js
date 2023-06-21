@@ -100,10 +100,10 @@ export default function Work() {
 }
 
 const Container = styled.div`
+  padding: 30px 0;
   .work {
     display: flex;
     gap: 30px;
-    padding: 30px 0;
     .img {
       width: 50%;
       text-align: center;
@@ -156,9 +156,21 @@ const Container = styled.div`
         }
       }
     }
+    @media (max-width: 1024px) {
+      flex-direction: column;
+      .img {
+        width: 100%;
+      }
+      .info {
+        width: 100%;
+      }
+    }
   }
   .button_wrap {
     margin-top: 50px;
     text-align: center;
+    @media (max-width: 1024px) {
+      margin-top: 30px;
+    }
   }
 `;
