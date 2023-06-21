@@ -5,13 +5,14 @@ import List from '@/data/work';
 export default function Works() {
   return (
     <Container>
-      Works
       <ul>
         {List.data.map((data) => (
           <li key={data.id}>
             <Link to={`/works/${data.acronym}`} state={data}>
               <img src={data.image?.url} alt="" />
-              <div className="cover">{data.acronym}</div>
+              <div className="cover">
+                <span className="tit">{data.acronym}</span>
+              </div>
             </Link>
           </li>
         ))}
@@ -20,4 +21,105 @@ export default function Works() {
   );
 }
 
-const Container = styled.div``;
+const Container = styled.div`
+  padding: 30px 0;
+  text-align: center;
+  ul {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    li {
+      flex: 0 1 calc(33.33% - 20px);
+      box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.1);
+      &:nth-child(3n + 2) {
+        transform: translateY(30px);
+      }
+      a {
+        display: block;
+        position: relative;
+        border: 1px solid #e1e1e1;
+        .cover {
+          display: flex;
+          position: absolute;
+          visibility: hidden;
+          width: 100%;
+          height: 100%;
+          left: 0;
+          top: 0;
+          color: #fff;
+          text-transform: uppercase;
+          opacity: 0;
+          transition: all 0.3s;
+          justify-content: center;
+          align-items: center;
+          .tit {
+            font-weight: 700;
+            opacity: 0;
+            transition: all 0.3s;
+            transform: scale(1.2);
+          }
+        }
+        &:hover {
+          img {
+            filter: brightness(75%) blur(1px);
+          }
+          .cover {
+            visibility: visible;
+            background: rgba(0, 0, 0, 0.5);
+            opacity: 1;
+            .tit {
+              opacity: 1;
+              transform: scale(1);
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 1024px) {
+    ul {
+      li {
+        flex: 0 1 calc(50% - 15px);
+        box-shadow: none;
+        &:nth-child(3n + 2) {
+          transform: translateY(0);
+        }
+        a {
+          border: 0;
+          img {
+            border: 1px solid #e1e1e1;
+            box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.1);
+          }
+          .cover {
+            position: static;
+            margin-top: 10px;
+            visibility: visible;
+            opacity: 1;
+            color: #666;
+            .tit {
+              opacity: 1;
+              transform: none;
+            }
+          }
+          &:hover {
+            filter: none;
+            img {
+              filter: none;
+            }
+            .cover {
+              background: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 599px) {
+    ul {
+      gap: 30px 15px;
+      li {
+        flex: 0 1 100%;
+      }
+    }
+  }
+`;
