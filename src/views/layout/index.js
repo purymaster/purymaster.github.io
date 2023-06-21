@@ -4,10 +4,10 @@ import { Outlet } from 'react-router-dom';
 import Header from '@views/shared/header';
 import Footer from '@views/shared/footer';
 
-export default function Layout() {
+export default function Layout({ toggleDarkMode, isDarkMode }) {
   return (
     <Container>
-      <Header />
+      <Header toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
       <main>
         <Outlet />
       </main>
@@ -25,6 +25,8 @@ const Container = styled.div`
   margin: 0 auto;
   padding: 0 30px;
   font-size: 16px;
+  background-color: ${(props) => props.theme.backgroundColor};
+  color: ${(props) => props.theme.textColor};
   main {
     overflow: auto;
     flex: 1;

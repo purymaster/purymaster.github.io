@@ -20,7 +20,7 @@ export default function Button({ className, onClick, icon, text, href }) {
       z-index: -1;
       width: 0;
       height: 100%;
-      background: #f07171;
+      background: ${(props) => props.theme.primaryColor};
       transition: all 0.3s;
     }
     &:hover {
