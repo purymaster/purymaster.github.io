@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.js": "/static/js/main.178e7a94.js",
+    "static/media/notokr_black.woff": "/static/media/notokr_black.f2e40ede24f3f577c335.woff",
+    "static/media/notokr_black.woff2": "/static/media/notokr_black.2ac864a194a4c2b8049b.woff2",
+    "static/media/notokr_regular.woff": "/static/media/notokr_regular.cfddc921ed85e54d6952.woff",
+    "static/media/notokr_medium.woff": "/static/media/notokr_medium.5102310dfc6377699dcb.woff",
+    "static/media/notokr_bold.woff": "/static/media/notokr_bold.ec10c2f9e8722d8cbbfb.woff",
+    "static/media/notokr_bold.woff2": "/static/media/notokr_bold.cbca31b8f6167edb980c.woff2",
+    "static/media/notokr_regular.woff2": "/static/media/notokr_regular.471553e26cd19e067eb8.woff2",
+    "static/media/notokr_medium.woff2": "/static/media/notokr_medium.c5c73df8a88f854ef6e8.woff2",
+    "static/media/Cabin-Regular.woff": "/static/media/Cabin-Regular.4e4ef0efa31d9e33b127.woff",
+    "static/media/Cabin-Bold.woff": "/static/media/Cabin-Bold.0c13db0a8815f8075814.woff",
+    "static/media/Cabin-Regular.woff2": "/static/media/Cabin-Regular.05f887508dc2e99942ba.woff2",
+    "static/media/Cabin-Bold.woff2": "/static/media/Cabin-Bold.8cc094d1102ea092666d.woff2",
+    "index.html": "/index.html",
+    "main.178e7a94.js.map": "/static/js/main.178e7a94.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.178e7a94.js"
+  ]
+}
