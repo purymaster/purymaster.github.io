@@ -25,8 +25,6 @@ const Container = styled.div`
   margin: 0 auto;
   padding: 0 30px;
   font-size: 16px;
-  background-color: ${(props) => props.theme.backgroundColor};
-  color: ${(props) => props.theme.textColor};
   main {
     overflow: auto;
     flex: 1;

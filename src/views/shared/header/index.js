@@ -36,6 +36,7 @@ const Container = styled.header`
     margin-top: -10px;
     border: 0;
     background: none;
+    color: ${(props) => props.theme.secondaryColor};
   }
   @media (max-width: 1024px) {
     padding: 0.5em 0;

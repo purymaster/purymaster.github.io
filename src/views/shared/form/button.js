@@ -5,8 +5,9 @@ export default function Button({ className, onClick, icon, text, href }) {
     display: inline-flex;
     position: relative;
     padding: 0.25em 1em;
-    border: 1px solid #000;
+    border: 1px solid ${(props) => props.theme.subTextColor};
     background: none;
+    color: ${(props) => props.theme.subTextColor};
     font-size: 1em;
     line-height: 1.5em;
     align-items: center;

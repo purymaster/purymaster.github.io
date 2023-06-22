@@ -31,6 +31,7 @@ const Container = styled.footer`
     li {
       width: 20px;
       height: 20px;
+      color: ${(props) => props.theme.secondaryColor};
     }
   }
   @media (max-width: 1024px) {

@@ -37,7 +37,7 @@ const Container = styled.div`
       a {
         display: block;
         position: relative;
-        border: 1px solid #e1e1e1;
+        border: 1px solid ${(props) => props.theme.borderColor};
         .cover {
           display: flex;
           position: absolute;
@@ -87,7 +87,7 @@ const Container = styled.div`
         a {
           border: 0;
           img {
-            border: 1px solid #e1e1e1;
+            border: 1px solid ${(props) => props.theme.borderColor};
             box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.1);
           }
           .cover {
@@ -95,7 +95,7 @@ const Container = styled.div`
             margin-top: 10px;
             visibility: visible;
             opacity: 1;
-            color: #666;
+            color: ${(props) => props.theme.subTextColor};
             .tit {
               opacity: 1;
               transform: none;
