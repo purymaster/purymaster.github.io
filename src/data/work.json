@@ -1,0 +1,314 @@
+{
+  "data": [
+    {
+      "id": 17,
+      "name": "팬시월렛",
+      "acronym": "Fanc Wallet",
+      "taskDuration": null,
+      "spec": ["React", "Redux", "GraphQL"],
+      "info": [
+        "탈중앙화 가상화폐 지갑 애플리케이션",
+        "레거시 코드로 운영되던 서비스를 React와 GraphQL 기반의 하이브리드 웹앱으로 재구축",
+        "타 서비스와의 포인트 연동 기능 추가, 사용자가 자사 포인트를 전환하여 활용할 수 있도록 지원",
+        "회원의 개인 키 분실 상황에 대비, 개인 키 복원 기능을 개발하여 사용자의 지속적인 서비스 이용 지원"
+      ],
+      "note": null,
+      "image": {
+        "url": "/assets/image/thumb/thumb_fanc.jpg"
+      },
+      "link": null
+    },
+    {
+      "id": 16,
+      "name": "시스루",
+      "acronym": "Seathru",
+      "taskDuration": null,
+      "spec": ["React", "Redux", "React-Query", "Ant Design", "Tailwind"],
+      "info": [
+        "통합 물류 관리 시스템",
+        "물류 데이터를 엑셀 파일 형식으로 변환 및 출력하는 기능 개발",
+        "사용자들이 집중적으로 정보를 확인하고 핵심 데이터를 시각적으로 파악할 수 있는 대시보드를 개발",
+        "사용자 관리 기능에 필요한 설정을 제어할 수 있는 서비스 설정 관리 기능을 개발"
+      ],
+      "note": null,
+      "image": {
+        "url": "/assets/image/thumb/thumb_noimage.jpg"
+      },
+      "link": null
+    },
+    {
+      "id": 15,
+      "name": "내카",
+      "acronym": "Naecar",
+      "taskDuration": null,
+      "spec": ["HTML", "CSS", "JavaScript", "JQuery", "Laravel Blade Template"],
+      "info": [
+        "자동차 커뮤니티",
+        "자동차 종합정보 API를 활용한 차량 인증 및 회원 가입 기능 개발",
+        "각 차량 제조사별로 게시판을 구성하여 사용자들이 차량에 관한 정보를 공유할 수 있도록 개발"
+      ],
+      "note": null,
+      "image": {
+        "url": "/assets/image/thumb/thumb_naecar.jpg"
+      },
+      "link": null
+    },
+    {
+      "id": 14,
+      "name": "왈라뷰",
+      "acronym": "Wallavu",
+      "taskDuration": null,
+      "spec": ["HTML", "CSS", "JavaScript", "JQuery"],
+      "info": [
+        "뷰티 커머스 서비스 (숏폼, 영상 리뷰 컨텐츠)",
+        "뷰티 제품 영상 콘텐츠 및 제품 매칭 시스템 구축",
+        "각종 이벤트 페이지 및 기획전 구축",
+        "주간 뷰티 매거진 제작 툴 개발 및 배포",
+        "일본 이커머스 쇼핑몰(페이페이몰) 유지보수"
+      ],
+      "note": null,
+      "image": {
+        "url": "/assets/image/thumb/thumb_wallavu.jpg"
+      },
+      "link": null
+    },
+    {
+      "id": 13,
+      "name": "미래엔",
+      "acronym": "MiraeN",
+      "taskDuration": {
+        "startAt": "2021-08-01",
+        "endAt": "2021-08-31"
+      },
+      "spec": ["HTML", "CSS", "JavaScript", "JQuery"],
+      "info": ["자사 통합 사이트 구축", "모바일 전용 웹 페이지"],
+      "note": null,
+      "image": {
+        "url": "/assets/image/thumb/thumb_miraen.jpg"
+      },
+      "link": {
+        "url": "https://github.com/purymaster/mirae_n"
+      }
+    },
+    {
+      "id": 12,
+      "name": "포스텍 입학처",
+      "acronym": "Postech ADM",
+      "taskDuration": {
+        "startAt": "2019-10-01",
+        "endAt": "2019-12-04"
+      },
+      "spec": ["HTML", "CSS", "JavaScript", "JQuery"],
+      "info": ["포항공과대학교 입학처 사이트 구축", "반응형 웹 페이지"],
+      "note": ["웹어워드코리아 2020 교육서비스분야 최우수상 수상"],
+      "image": {
+        "url": "/assets/image/thumb/thumb_adm.jpg"
+      },
+      "link": {
+        "url": "https://github.com/purymaster/postech_adm"
+      }
+    },
+    {
+      "id": 11,
+      "name": "아리시스",
+      "acronym": "Arisys",
+      "taskDuration": {
+        "startAt": "2019-10-01",
+        "endAt": "2019-11-30"
+      },
+      "spec": ["HTML", "CSS", "JavaScript", "JQuery"],
+      "info": ["아리시스 자사 PR 사이트", "반응형 웹 페이지"],
+      "note": null,
+      "image": {
+        "url": "/assets/image/thumb/thumb_arisys.jpg"
+      },
+      "link": {
+        "url": "https://github.com/purymaster/arisys"
+      }
+    },
+    {
+      "id": 10,
+      "name": "포스텍 IT융합공학과",
+      "acronym": "Postech CiTE",
+      "taskDuration": {
+        "startAt": "2019-08-01",
+        "endAt": "2019-09-30"
+      },
+      "spec": ["HTML", "CSS", "JavaScript", "JQuery"],
+      "info": ["포항공과대학교 IT융합공학과 사이트 구축", "반응형 웹 페이지"],
+      "note": null,
+      "image": {
+        "url": "/assets/image/thumb/thumb_cite.jpg"
+      },
+      "link": {
+        "url": "https://github.com/purymaster/postech_it"
+      }
+    },
+    {
+      "id": 9,
+      "name": "올림피아드",
+      "acronym": "Olympiad",
+      "taskDuration": {
+        "startAt": "2019-02-01",
+        "endAt": "2019-09-30"
+      },
+      "spec": ["HTML", "CSS", "JavaScript", "JQuery"],
+      "info": ["올림피아드학원 통합 사이트 구축", "반응형 웹 페이지"],
+      "note": ["웹어워드코리아 2020 전문교육분야 최우수상 수상"],
+      "image": {
+        "url": "/assets/image/thumb/thumb_olympiad.jpg"
+      },
+      "link": {
+        "url": "https://github.com/purymaster/olympiad"
+      }
+    },
+    {
+      "id": 8,
+      "name": "한독",
+      "acronym": "Handok",
+      "taskDuration": {
+        "startAt": "2018-04-01",
+        "endAt": "2018-05-31"
+      },
+      "spec": ["HTML", "CSS", "JavaScript", "JQuery"],
+      "info": ["한독 자사 PR 사이트", "반응형 웹 페이지"],
+      "note": ["웹어워드코리아 2018 제약분야 최우수상 수상"],
+      "image": {
+        "url": "/assets/image/thumb/thumb_handok.jpg"
+      },
+      "link": {
+        "url": "https://github.com/purymaster/handok"
+      }
+    },
+    {
+      "id": 7,
+      "name": "램프에듀케이션",
+      "acronym": "Lamp",
+      "taskDuration": {
+        "startAt": "2017-08-01",
+        "endAt": "2017-09-30"
+      },
+      "spec": ["HTML", "CSS", "JavaScript", "JQuery"],
+      "info": ["캐나다 원주민 학습 관리 시스템", "하이브리드 앱"],
+      "note": null,
+      "image": {
+        "url": "/assets/image/thumb/thumb_lamp.jpg"
+      },
+      "link": {
+        "url": "https://github.com/purymaster/lamp"
+      }
+    },
+    {
+      "id": 6,
+      "name": "기아자동차",
+      "acronym": "Kia Motors",
+      "taskDuration": {
+        "startAt": "2017-01-01",
+        "endAt": "2017-03-31"
+      },
+      "spec": ["HTML", "CSS", "JavaScript", "JQuery", "AEM"],
+      "info": [
+        "다국어(영어/아랍어/러시아어/터키어/스페인어/아제르바이잔어) 확산 프로젝트",
+        "Adobe Experience Manager 기반 구축"
+      ],
+      "note": null,
+      "image": {
+        "url": "/assets/image/thumb/thumb_kia.jpg"
+      },
+      "link": null
+    },
+    {
+      "id": 5,
+      "name": "삼성전자 조직문화 SOS",
+      "acronym": "SOS",
+      "taskDuration": {
+        "startAt": "2017-06-01",
+        "endAt": "2017-07-31"
+      },
+      "spec": ["HTML", "CSS", "JavaScript", "JQuery"],
+      "info": ["모바일 비공개 신문고 플랫폼", "하이브리드 앱"],
+      "note": null,
+      "image": {
+        "url": "/assets/image/thumb/thumb_sos.jpg"
+      },
+      "link": {
+        "url": "https://github.com/purymaster/sos"
+      }
+    },
+    {
+      "id": 4,
+      "name": "PLAYER",
+      "acronym": "Player",
+      "taskDuration": {
+        "startAt": "2016-11-01",
+        "endAt": "2016-12-31"
+      },
+      "spec": ["HTML", "CSS", "JavaScript", "JQuery"],
+      "info": ["패션 멀티샵 이커머스"],
+      "note": null,
+      "image": {
+        "url": "/assets/image/thumb/thumb_player.jpg"
+      },
+      "link": {
+        "url": "https://github.com/purymaster/player"
+      }
+    },
+    {
+      "id": 3,
+      "name": "삼성웰스토리 웰페이",
+      "acronym": "Welstory",
+      "taskDuration": {
+        "startAt": "2016-04-01",
+        "endAt": "2016-05-30"
+      },
+      "spec": ["HTML", "CSS", "JavaScript", "JQuery"],
+      "info": ["모바일 식권 관리 및 결제 플랫폼", "하이브리드 앱"],
+      "note": null,
+      "image": {
+        "url": "/assets/image/thumb/thumb_welstory.jpg"
+      },
+      "link": {
+        "url": "https://github.com/purymaster/welstory"
+      }
+    },
+    {
+      "id": 2,
+      "name": "JB우리캐피탈",
+      "acronym": "JB",
+      "taskDuration": {
+        "startAt": "2015-11-01",
+        "endAt": "2016-03-31"
+      },
+      "spec": ["HTML", "CSS", "JavaScript", "JQuery", "WebSquare5"],
+      "info": [
+        "차세대 시스템 프로젝트",
+        "웹스퀘어5를 사용하여 레이아웃 작업",
+        "웹 접근성 준수를 위한 가이드 작업"
+      ],
+      "note": ["웹 접근성 인증마크 획득(한국웹접근성인증평가원)"],
+      "image": {
+        "url": "/assets/image/thumb/thumb_jb.jpg"
+      },
+      "link": null
+    },
+    {
+      "id": 1,
+      "name": "러메이",
+      "acronym": "LEMEI",
+      "taskDuration": {
+        "startAt": "2015-06-01",
+        "endAt": "2015-07-31"
+      },
+      "spec": ["HTML", "CSS", "JavaScript", "JQuery"],
+      "info": [
+        "중국 소매장 역직구 B2B 이커머스 쇼핑몰",
+        "다국어 쇼핑몰(이음샵)을 커스터마이징하여 레이아웃 작업"
+      ],
+      "note": null,
+      "image": {
+        "url": "/assets/image/thumb/thumb_lemei.jpg"
+      },
+      "link": null
+    }
+  ]
+}
