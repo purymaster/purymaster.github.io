@@ -221,8 +221,10 @@
       "id": 5,
       "name": "삼성전자 조직문화 SOS",
       "acronym": "SOS",
-      "startAt": "2017-06-01",
-      "endAt": "2017-07-31",
+      "taskDuration": {
+        "startAt": "2017-06-01",
+        "endAt": "2017-07-31"
+      },
       "spec": ["HTML", "CSS", "JavaScript", "JQuery"],
       "info": ["모바일 비공개 신문고 플랫폼", "하이브리드 앱"],
       "note": null,
@@ -255,8 +257,10 @@
       "id": 3,
       "name": "삼성웰스토리 웰페이",
       "acronym": "Welstory",
-      "startAt": "2016-04-01",
-      "endAt": "2016-05-30",
+      "taskDuration": {
+        "startAt": "2016-04-01",
+        "endAt": "2016-05-30"
+      },
       "spec": ["HTML", "CSS", "JavaScript", "JQuery"],
       "info": ["모바일 식권 관리 및 결제 플랫폼", "하이브리드 앱"],
       "note": null,

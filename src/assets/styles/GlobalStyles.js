@@ -102,7 +102,10 @@ export const GlobalStyle = createGlobalStyle`
   body {
     line-height: 1.5;
     word-break: keep-all;
-    font-family : Cabin, NotoSans, Helvetica Neue, Apple SD Gothic Neo, Droid Sans, Malgun Gothic, 맑은 고딕, Dotum, 돋움, sans-serif;
+    background: ${(props) => props.theme.backgroundColor};
+    color: ${(props) => props.theme.textColor};
+    font-family: Cabin, NotoSans, Helvetica Neue, Apple SD Gothic Neo, Droid Sans, Malgun Gothic, 맑은 고딕, Dotum, 돋움, sans-serif;
+    transition: all .3s;
   }
 
   ol, ul, li {

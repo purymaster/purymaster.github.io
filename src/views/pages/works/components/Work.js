@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { GitHub, Calendar, Code, FileText, Tag, ExternalLink, List } from 'react-feather';
+
 import Button from '@/views/shared/form/button';
 
 export default function Work() {
@@ -108,15 +109,15 @@ const Container = styled.div`
       width: 50%;
       text-align: center;
       img {
-        border: 1px solid #e1e1e1;
+        border: 1px solid ${(props) => props.theme.borderColor};
         box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.1);
       }
     }
     .info {
       width: 50%;
       padding: 30px 0;
-      border-top: 1px solid #333;
-      border-bottom: 1px solid #333;
+      border-top: 1px solid ${(props) => props.theme.subTextColor};
+      border-bottom: 1px solid ${(props) => props.theme.subTextColor};
       h1 {
         margin-bottom: 0.5em;
         font-weight: 700;
@@ -135,7 +136,7 @@ const Container = styled.div`
             }
           }
           dd {
-            color: #666;
+            color: ${(props) => props.theme.subTextColor};
             margin-top: 5px;
             li {
               position: relative;
@@ -148,7 +149,7 @@ const Container = styled.div`
                 width: 4px;
                 height: 4px;
                 margin-top: -2px;
-                background: #666;
+                background: ${(props) => props.theme.subTextColor};
                 border-radius: 50%;
               }
             }
