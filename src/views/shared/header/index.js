@@ -1,6 +1,8 @@
 import { useContext } from 'react';
 import { Moon, Sun } from 'react-feather';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+
 import { ThemeContext } from '@/App';
 
 export default function Header() {
@@ -9,8 +11,10 @@ export default function Header() {
   return (
     <Container>
       <h1>
-        CHANGKEUN, KOO
-        <span>UI Developer</span>
+        <Link to="/">
+          CHANGKEUN, KOO
+          <span>UI Developer</span>
+        </Link>
       </h1>
       <button type="button" className="theme" onClick={toggleDarkMode}>
         {isDarkMode ? <Moon size={20} /> : <Sun size={20} />}

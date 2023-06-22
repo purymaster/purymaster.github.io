@@ -1,12 +1,18 @@
+import { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 import List from '@/data/work';
 
 export default function Works() {
+  const [isLayoutActive, setIsLayoutActive] = useState(false);
+  useEffect(() => {
+    setIsLayoutActive(true);
+  }, []);
+
   return (
     <Container>
-      <ul>
+      <ul className={isLayoutActive ? 'active' : ''}>
         {List.data.map((data) => (
           <li key={data.id}>
             <Link to={`/works/${data.acronym}`} state={data}>
@@ -30,10 +36,20 @@ const Container = styled.div`
     gap: 30px;
     flex-wrap: wrap;
     li {
+      position: relative;
       flex: 0 1 calc(33.33% - 20px);
       box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.1);
+      opacity: 0;
+      transition: all 1s;
+      will-change: transform;
+      &:nth-child(3n),
+      &:nth-child(3n + 1) {
+        top: 0;
+        transform: translateY(-100px);
+      }
       &:nth-child(3n + 2) {
-        transform: translateY(30px);
+        top: 30px;
+        transform: translateY(100px);
       }
       a {
         display: block;
@@ -76,13 +92,22 @@ const Container = styled.div`
         }
       }
     }
+    &.active {
+      li {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
   }
   @media (max-width: 1024px) {
     ul {
       li {
         flex: 0 1 calc(50% - 15px);
         box-shadow: none;
+        &:nth-child(3n),
+        &:nth-child(3n + 1),
         &:nth-child(3n + 2) {
+          top: 0;
           transform: translateY(0);
         }
         a {

@@ -105,7 +105,7 @@ export const GlobalStyle = createGlobalStyle`
     background: ${(props) => props.theme.backgroundColor};
     color: ${(props) => props.theme.textColor};
     font-family: Cabin, NotoSans, Helvetica Neue, Apple SD Gothic Neo, Droid Sans, Malgun Gothic, 맑은 고딕, Dotum, 돋움, sans-serif;
-    transition: all .3s;
+    transition: background .3s;
   }
 
   ol, ul, li {
