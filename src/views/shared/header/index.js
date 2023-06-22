@@ -1,7 +1,11 @@
+import { useContext } from 'react';
 import { Moon, Sun } from 'react-feather';
 import styled from 'styled-components';
+import { ThemeContext } from '@/App';
 
-export default function Header({ toggleDarkMode, isDarkMode }) {
+export default function Header() {
+  const { isDarkMode, toggleDarkMode } = useContext(ThemeContext);
+
   return (
     <Container>
       <h1>

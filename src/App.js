@@ -1,9 +1,11 @@
-import { useState } from 'react';
+import { useState, createContext } from 'react';
 import { GlobalStyle } from '@assets/styles/GlobalStyles';
 import { ThemeProvider } from 'styled-components';
 
 import Routes from '@/router/Routes';
 import { lightTheme, darkTheme } from './assets/styles/theme';
+
+export const ThemeContext = createContext();
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -13,10 +15,12 @@ function App() {
   };
 
   return (
-    <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
-      <GlobalStyle />
-      <Routes toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
-    </ThemeProvider>
+    <ThemeContext.Provider value={{ isDarkMode, toggleDarkMode }}>
+      <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
+        <GlobalStyle />
+        <Routes />
+      </ThemeProvider>
+    </ThemeContext.Provider>
   );
 }
 
