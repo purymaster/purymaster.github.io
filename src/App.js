@@ -1,9 +1,9 @@
 import { useState, useEffect, createContext } from 'react';
-import { GlobalStyle } from '@assets/styles/GlobalStyles';
 import { ThemeProvider } from 'styled-components';
 
+import { GlobalStyle } from '@assets/styles/GlobalStyles';
+import { lightTheme, darkTheme } from '@assets/styles/theme';
 import Routes from '@/router/Routes';
-import { lightTheme, darkTheme } from './assets/styles/theme';
 
 export const ThemeContext = createContext();
 
