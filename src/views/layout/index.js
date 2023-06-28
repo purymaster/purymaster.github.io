@@ -3,13 +3,16 @@ import { Outlet } from 'react-router-dom';
 
 import Header from '@views/shared/header';
 import Footer from '@views/shared/footer';
+import Box from '@views/shared/box';
 
 export default function Layout() {
   return (
     <Container>
       <Header />
       <main>
-        <Outlet />
+        <Box>
+          <Outlet />
+        </Box>
       </main>
       <Footer />
     </Container>
@@ -17,23 +20,19 @@ export default function Layout() {
 }
 
 const Container = styled.div`
-  display: flex;
-  flex-direction: column;
   height: 100%;
   position: relative;
-  max-width: 1340px;
-  margin: 0 auto;
-  padding: 0 30px;
   font-size: 16px;
   main {
-    overflow: auto;
-    flex: 1;
+    padding: 70px 0 50px;
   }
   @media (max-width: 1024px) {
     font-size: 14px;
+    main {
+      padding: 50px 0;
+    }
   }
   @media (max-width: 599px) {
     font-size: 12px;
-    padding: 0 15px;
   }
 `;
