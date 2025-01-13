@@ -145,4 +145,23 @@ export const GlobalStyle = createGlobalStyle`
   :focus {
     outline: 0;
   }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    margin-left: -8px;
+    background: ${(props) => props.theme.backgroundColor};
+    border-radius: 4px;
+  }
+
+::-webkit-scrollbar-thumb {
+	width: 8px;
+	height: 8px;
+	background: ${(props) => props.theme.primaryColor};
+	border-radius: 4px;
+}
+
+::-webkit-scrollbar-button {
+	display: none;
+}
 `;
