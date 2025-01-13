@@ -113,7 +113,7 @@ const Container = styled.div`
         }
         a {
           img {
-            box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.1);
+            border:1px solid ${(props) => props.theme.borderColor};
             border-radius: 0.5em;
           }
           .cover {
