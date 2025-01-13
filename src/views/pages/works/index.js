@@ -36,8 +36,10 @@ const Container = styled.div`
     gap: 30px;
     flex-wrap: wrap;
     li {
+      overflow: hidden;
       position: relative;
       flex: 0 1 calc(33.33% - 20px);
+      border-radius: 0.5em;
       box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.1);
       opacity: 0;
       transition: all 1s;
@@ -54,15 +56,13 @@ const Container = styled.div`
       a {
         display: block;
         position: relative;
-        border: 1px solid ${(props) => props.theme.borderColor};
         .cover {
           display: flex;
           position: absolute;
           visibility: hidden;
           width: 100%;
           height: 100%;
-          left: 0;
-          top: 0;
+          inset: 0;
           color: #fff;
           text-transform: uppercase;
           opacity: 0;
@@ -104,6 +104,7 @@ const Container = styled.div`
       li {
         flex: 0 1 calc(50% - 15px);
         box-shadow: none;
+        border-radius: 0;
         &:nth-child(3n),
         &:nth-child(3n + 1),
         &:nth-child(3n + 2) {
@@ -111,10 +112,9 @@ const Container = styled.div`
           transform: translateY(0);
         }
         a {
-          border: 0;
           img {
-            border: 1px solid ${(props) => props.theme.borderColor};
             box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.1);
+            border-radius: 0.5em;
           }
           .cover {
             position: static;
