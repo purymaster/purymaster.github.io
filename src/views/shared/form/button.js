@@ -18,9 +18,11 @@ export default function Button({ className, onClick, icon, text, href }) {
 
 const Container = styled.button`
   display: inline-flex;
+  overflow: hidden;
   position: relative;
-  padding: 0.25em 1em;
+  padding: 0.5em 2em;
   border: 1px solid ${(props) => props.theme.subTextColor};
+  border-radius: 0.5em;
   background: none;
   color: ${(props) => props.theme.subTextColor};
   font-size: 1em;
@@ -42,6 +44,7 @@ const Container = styled.button`
   }
   &:hover {
     color: #fff;
+    border-color: ${(props) => props.theme.primaryColor};
     &:after {
       width: 100%;
     }
