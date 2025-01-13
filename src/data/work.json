@@ -1,6 +1,26 @@
 {
   "data": [
     {
+      "id": 18,
+      "name": "IBK 기업은행 i-ONE Bank 기업용 스마트뱅킹",
+      "acronym": "IBK",
+      "taskDuration": {
+        "startAt": "2024-06-24",
+        "endAt": "2024-10-31"
+      },
+      "spec": ["HTML", "CSS", "JavaScript", "JQuery", "Vite"],
+      "info": [
+        "기업용 스마트뱅킹 하이브리드앱 구축"
+      ],
+      "note": null,
+      "image": {
+        "url": "/assets/image/thumb/thumb_ibk.jpg"
+      },
+      "link": {
+        "url": "https://play.google.com/store/apps/details?id=com.ibk.android.kiup&pcampaignid=web_share"
+      }
+    },
+    {
       "id": 17,
       "name": "팬시월렛",
       "acronym": "Fanc Wallet",
@@ -16,7 +36,9 @@
       "image": {
         "url": "/assets/image/thumb/thumb_fanc.jpg"
       },
-      "link": null
+      "link": {
+        "url": "https://play.google.com/store/apps/details?id=co.kr.fancwalletaos&pcampaignid=web_share"
+      }
     },
     {
       "id": 16,

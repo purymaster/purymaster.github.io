@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { GitHub, Calendar, Code, FileText, Tag, ExternalLink, List } from 'react-feather';
+import { Calendar, Code, FileText, Tag, ExternalLink, List, ArrowRightCircle } from 'react-feather';
 
 import Button from '@/views/shared/form/button';
 
@@ -21,75 +21,75 @@ export default function Work() {
           </div>
           <div className="info">
             <h1>{data.name}</h1>
-            <dl>
+            <ul className="category">
               {data.taskDuration && (
-                <div>
-                  <dt>
+                <li>
+                  <h2 className="tit">
                     <Calendar size={16} />
                     작업기간
-                  </dt>
-                  <dd>
+                  </h2>
+                  <div className="txt">
                     {data.taskDuration.startAt} ~ {data.taskDuration.endAt}
-                  </dd>
-                </div>
+                  </div>
+                </li>
               )}
               {data.spec && (
-                <div>
-                  <dt>
+                <li>
+                  <h2 className="tit">
                     <Code size={16} />
                     사용기술
-                  </dt>
-                  <dd>
+                  </h2>
+                  <div className="txt">
                     <ul>
                       {data.spec.map((data, index) => (
                         <li key={index}>{data}</li>
                       ))}
                     </ul>
-                  </dd>
-                </div>
+                  </div>
+                </li>
               )}
               {data.info && (
-                <div>
-                  <dt>
+                <li>
+                  <h2 className="tit">
                     <FileText size={16} />
                     설명
-                  </dt>
-                  <dd>
+                  </h2>
+                  <div className="txt">
                     <ul>
                       {data.info.map((data, index) => (
                         <li key={index}>{data}</li>
                       ))}
                     </ul>
-                  </dd>
-                </div>
+                  </div>
+                </li>
               )}
               {data.note && (
-                <div>
-                  <dt>
+                <li>
+                  <h2 className="tit">
                     <Tag size={16} />
                     비고
-                  </dt>
-                  <dd>
+                  </h2>
+                  <div className="txt">
                     <ul>
                       {data.note.map((data, index) => (
                         <li key={index}>{data}</li>
                       ))}
                     </ul>
-                  </dd>
-                </div>
+                  </div>
+                </li>
               )}
               {data.link && data.link.url && (
-                <div>
-                  <dt>
+                <li>
+                  <h2 className="tit">
                     <ExternalLink size={16} />
                     링크
-                  </dt>
-                  <dd>
-                    <Button href={data.link.url} icon={<GitHub size={16} />} text="Github" />
-                  </dd>
-                </div>
+                  </h2>
+                  <div className="txt">
+                    <Button href={data.link.url} icon={<ArrowRightCircle size={16} />} text="페이지 이동" />
+                  </div>
+                </li>
               )}
-            </dl>
+            </ul>
           </div>
         </div>
       )}
@@ -109,7 +109,7 @@ const Container = styled.div`
       width: 50%;
       text-align: center;
       img {
-        border: 1px solid ${(props) => props.theme.borderColor};
+        border-radius: 0.5em;
         box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.1);
       }
     }
@@ -123,11 +123,12 @@ const Container = styled.div`
         font-weight: 700;
         font-size: 1.5em;
       }
-      dl {
-        > div {
+      .category {
+        > li {
           margin-top: 1.5em;
-          dt {
+          .tit {
             display: flex;
+            margin-bottom: 0.5em;
             font-weight: 700;
             font-size: 1.1em;
             align-items: center;
@@ -135,7 +136,7 @@ const Container = styled.div`
               margin-right: 5px;
             }
           }
-          dd {
+          .txt {
             color: ${(props) => props.theme.subTextColor};
             margin-top: 5px;
             li {
