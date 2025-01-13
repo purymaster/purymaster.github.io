@@ -1,7 +1,7 @@
 {
   "data": [
     {
-      "id": 18,
+      "id": 19,
       "name": "IBK 기업은행 i-ONE Bank 기업용 스마트뱅킹",
       "acronym": "IBK",
       "taskDuration": {
@@ -18,6 +18,27 @@
       },
       "link": {
         "url": "https://play.google.com/store/apps/details?id=com.ibk.android.kiup&pcampaignid=web_share"
+      }
+    },
+    {
+      "id": 18,
+      "name": "빅브라더스 영화관 관리 플랫폼",
+      "acronym": "Big Brothers",
+      "taskDuration": {
+        "startAt": "2024-05-13",
+        "endAt": "2024-06-12"
+      },
+      "spec": ["Vue", "Nuxt", "Vite", "PrimeVue"],
+      "info": [
+        "중소규모 영화관 운영 관리 플랫폼",
+        "PrimeVue 라이브러리를 활용하여 화면 구현"
+      ],
+      "note": null,
+      "image": {
+        "url": "/assets/image/thumb/thumb_noimage.jpg"
+      },
+      "link": {
+        "url": "https://dev-gits.bigbrothers.co.kr/pub"
       }
     },
     {
